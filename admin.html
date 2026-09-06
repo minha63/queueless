@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>Admin Dashboard - QueueLess</title>
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+
+<body>
+
+
+    <!-- Navigation -->
+
+    <nav class="navbar">
+
+        <div class="logo">
+            Queue<span>Less</span>
+        </div>
+
+
+        <div class="nav-links">
+
+            <a href="index.html">
+                Home
+            </a>
+
+            <a href="student.html">
+                My Queue
+            </a>
+
+            <a href="admin.html">
+                Admin
+            </a>
+
+        </div>
+
+    </nav>
+
+
+
+    <!-- Admin Dashboard -->
+
+    <main class="admin-page">
+
+
+        <div class="admin-header">
+
+            <div>
+
+                <p class="small-title">
+                    STAFF PANEL
+                </p>
+
+                <h1>
+                    Queue Dashboard
+                </h1>
+
+            </div>
+
+
+            <div class="admin-status">
+                🟢 System Active
+            </div>
+
+        </div>
+
+
+
+        <!-- Current Token -->
+
+        <section class="current-serving">
+
+
+            <p>
+                CURRENTLY SERVING
+            </p>
+
+
+            <h2 id="adminCurrentToken">
+                A00
+            </h2>
+
+
+            <button
+                class="next-button"
+                onclick="nextToken()">
+
+                NEXT TOKEN →
+
+            </button>
+
+
+        </section>
+
+
+
+        <!-- Statistics -->
+
+        <section class="admin-stats">
+
+
+            <div class="admin-stat">
+
+                <p>
+                    Waiting
+                </p>
+
+                <h3 id="waitingCount">
+                    0
+                </h3>
+
+            </div>
+
+
+            <div class="admin-stat">
+
+                <p>
+                    Current Token
+                </p>
+
+                <h3 id="adminCurrentSmall">
+                    A00
+                </h3>
+
+            </div>
+
+
+            <div class="admin-stat">
+
+                <p>
+                    Next Token
+                </p>
+
+                <h3 id="nextWaiting">
+                    A01
+                </h3>
+
+            </div>
+
+
+        </section>
+
+
+
+        <!-- Waiting list -->
+
+        <section class="waiting-section">
+
+
+            <div class="waiting-header">
+
+                <h2>
+                    Waiting Queue
+                </h2>
+
+                <span id="queueCount">
+                    0 people
+                </span>
+
+            </div>
+
+
+            <div id="waitingList"
+                 class="waiting-list">
+
+            </div>
+
+
+        </section>
+
+
+    </main>
+
+
+
+    <script src="admin.js"></script>
+
+</body>
+
+</html>

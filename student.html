@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>My Queue - QueueLess</title>
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+
+<body>
+
+
+    <!-- Navigation -->
+
+    <nav class="navbar">
+
+        <div class="logo">
+            Queue<span>Less</span>
+        </div>
+
+        <div class="nav-links">
+
+            <a href="index.html">
+                Home
+            </a>
+
+            <a href="student.html">
+                My Queue
+            </a>
+
+            <a href="admin.html">
+                Admin
+            </a>
+
+        </div>
+
+    </nav>
+
+
+
+    <!-- Student Queue -->
+
+    <main class="queue-page">
+
+        <div class="queue-card">
+
+
+            <p class="small-title">
+                YOUR DIGITAL TOKEN
+            </p>
+
+
+            <h1 id="serviceName">
+                College Office
+            </h1>
+
+
+            <div class="token-display">
+
+                <p>Your Token</p>
+
+                <h2 id="myToken">
+                    A01
+                </h2>
+
+            </div>
+
+
+
+            <!-- Queue information -->
+
+            <div class="queue-info">
+
+
+                <div class="info-box">
+
+                    <p>
+                        Currently Serving
+                    </p>
+
+                    <h3 id="currentToken">
+                        A00
+                    </h3>
+
+                </div>
+
+
+
+                <div class="info-box">
+
+                    <p>
+                        People Ahead
+                    </p>
+
+                    <h3 id="peopleAhead">
+                        0
+                    </h3>
+
+                </div>
+
+
+
+                <div class="info-box">
+
+                    <p>
+                        Estimated Wait
+                    </p>
+
+                    <h3 id="waitTime">
+                        0 min
+                    </h3>
+
+                </div>
+
+
+            </div>
+
+
+
+            <!-- Status -->
+
+            <div
+                id="queueStatus"
+                class="queue-status">
+
+                🟢 You are in the queue.
+
+            </div>
+
+
+
+            <!-- Leave Queue -->
+
+            <button
+                class="leave-button"
+                onclick="leaveQueue()">
+
+                Leave Queue
+
+            </button>
+
+
+        </div>
+
+    </main>
+
+
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>

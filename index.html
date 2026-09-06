@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>QueueLess - Digital Queue Management</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Navigation -->
+    <nav class="navbar">
+
+        <div class="logo">
+            Queue<span>Less</span>
+        </div>
+
+        <div class="nav-links">
+            <a href="index.html">Home</a>
+            <a href="student.html">My Queue</a>
+            <a href="admin.html">Admin</a>
+        </div>
+
+    </nav>
+
+
+    <!-- Hero Section -->
+    <section class="hero">
+
+        <div class="hero-content">
+
+            <p class="small-title">DIGITAL QUEUE MANAGEMENT</p>
+
+            <h1>
+                Don't wait in line.
+                <span>Wait your turn.</span>
+            </h1>
+
+            <p class="hero-description">
+                Join the queue digitally, track your position,
+                and return when your turn is approaching.
+            </p>
+
+            <a href="#services" class="main-button">
+                Get Your Token
+            </a>
+
+        </div>
+
+    </section>
+
+
+    <!-- Services -->
+    <section class="services" id="services">
+
+        <div class="section-heading">
+
+            <p class="small-title">CHOOSE A SERVICE</p>
+
+            <h2>
+                What do you need?
+            </h2>
+
+            <p>
+                Select a service to join its digital queue.
+            </p>
+
+        </div>
+
+
+        <div class="service-container">
+
+            <!-- College Office -->
+            <div class="service-card">
+
+                <div class="service-icon">
+                    🏢
+                </div>
+
+                <h3>College Office</h3>
+
+                <p>
+                    Certificates, documents and general office services.
+                </p>
+
+                <button
+                    class="service-button"
+                    onclick="getToken('College Office')">
+
+                    Get Token
+
+                </button>
+
+            </div>
+
+
+            <!-- Exam Cell -->
+            <div class="service-card">
+
+                <div class="service-icon">
+                    📝
+                </div>
+
+                <h3>Exam Cell</h3>
+
+                <p>
+                    Exam forms, hall tickets and examination services.
+                </p>
+
+                <button
+                    class="service-button"
+                    onclick="getToken('Exam Cell')">
+
+                    Get Token
+
+                </button>
+
+            </div>
+
+
+            <!-- Fee Counter -->
+            <div class="service-card">
+
+                <div class="service-icon">
+                    💳
+                </div>
+
+                <h3>Fee Counter</h3>
+
+                <p>
+                    Pay fees and handle student financial services.
+                </p>
+
+                <button
+                    class="service-button"
+                    onclick="getToken('Fee Counter')">
+
+                    Get Token
+
+                </button>
+
+            </div>
+
+
+            <!-- Library -->
+            <div class="service-card">
+
+                <div class="service-icon">
+                    📚
+                </div>
+
+                <h3>Library</h3>
+
+                <p>
+                    Book issue, return and library assistance.
+                </p>
+
+                <button
+                    class="service-button"
+                    onclick="getToken('Library')">
+
+                    Get Token
+
+                </button>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- How it works -->
+    <section class="how-it-works">
+
+        <div class="section-heading">
+
+            <p class="small-title">HOW IT WORKS</p>
+
+            <h2>
+                Three simple steps
+            </h2>
+
+        </div>
+
+
+        <div class="steps">
+
+            <div class="step">
+
+                <div class="step-number">
+                    01
+                </div>
+
+                <h3>Get a Token</h3>
+
+                <p>
+                    Choose a service and receive your digital token.
+                </p>
+
+            </div>
+
+
+            <div class="step">
+
+                <div class="step-number">
+                    02
+                </div>
+
+                <h3>Track Your Position</h3>
+
+                <p>
+                    See how many people are ahead of you.
+                </p>
+
+            </div>
+
+
+            <div class="step">
+
+                <div class="step-number">
+                    03
+                </div>
+
+                <h3>Come When Called</h3>
+
+                <p>
+                    Return when your token is approaching.
+                </p>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- Footer -->
+    <footer>
+
+        <div class="logo">
+            Queue<span>Less</span>
+        </div>
+
+        <p>
+            Making waiting smarter.
+        </p>
+
+    </footer>
+
+
+    <script src="script.js"></script>
+
+</body>
+</html>
